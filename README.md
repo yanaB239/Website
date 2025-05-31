@@ -1,7 +1,13 @@
-echo "# Website" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/yanaB239/Website.git
-git push -u origin main
+Вебсайт для изучения анатомии человека с элементами дополненной реальности. 
+
+## Технологии
+- HTML, CSS, JavaScript
+- библиотеки для AR: AR.js, A-Frame, Three.js
+
+## Особенности
+- 3D модель человека появляется при наведении камеры на AR-маркер
+
+## Запуск проекта
+Этот проект размещён на [Glitch](https://glitch.com/), где он автоматически запускается и доступен онлайн.
+Чтобы посмотреть сайт:
+- Перейдите по ссылке проекта на Glitch: https://wobbly-whip-yamamomo.glitch.me
