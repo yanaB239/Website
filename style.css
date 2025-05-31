@@ -1,0 +1,108 @@
+/* Стиль для всей страницы */
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Стили для контейнера UI */
+.ui-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+/* Стили для поля ввода */
+#findOrgan {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #3575dd;
+  border-radius: 5px;
+  outline: none;
+  width: 200px;
+  transition: all 0.3s ease;
+}
+
+/* Стили для фокуса на поле ввода */
+#findOrgan:focus {
+  border-color: #FF5733;
+  /* Цвет рамки при фокусе */
+  box-shadow: 0 0 10px rgba(255, 87, 51, 0.5);
+  /* Легкая тень при фокусе */
+}
+
+/* Стили для кнопки */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3575dd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Стили для кнопки при наведении */
+button:hover {
+  background-color: #FF5733;
+}
+
+/* Контейнер с информацией об органе */
+#organInfo {
+  position: absolute;
+  margin-top: 10px;
+  top: 10%;
+  right: 40px;
+  padding: 10px;
+  border: 1px solid #3575dd;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок и изображение в одной строке */
+.organ-header {
+  display: flex;
+  gap: 30px;
+}
+
+/* Стилизация заголовка */
+#organInfo h4 {
+  text-align: left;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 1.6em;
+  border-left: 4px solid #4a90e2;
+  padding-left: 12px;      
+  padding-bottom: 0;      
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  line-height: 1.2;        
+  display: inline-block;   
+}
+
+/* Стиль окна с инструкцией */
+dialog {
+  background: rgba(255, 255, 255, 1);
+  width: 300px;
+  border: #3575dd;
+  border-radius: 5px;
+  position: absolute;
+} 
+
+dialog ul {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+dialog li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
